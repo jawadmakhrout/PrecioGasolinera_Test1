@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios de Combustible</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Estación de Servicio</h1>
+            <p>Precios actualizados</p>
+        </header>
+
+        <div class="grid-precios">
+            <div class="card diesel">
+                <h2>Gasoil Normal</h2>
+                <div class="precio">
+                    <span id="p-gasoil-n">---</span> <span class="moneda">€</span>
+                </div>
+            </div>
+
+            <div class="card diesel-plus">
+                <h2>Gasoil Premium</h2>
+                <div class="precio">
+                    <span id="p-gasoil-p">---</span> <span class="moneda">€</span>
+                </div>
+            </div>
+
+            <div class="card gasolina">
+                <h2>Gasolina 95</h2>
+                <div class="precio">
+                    <span id="p-gasolina-n">---</span> <span class="moneda">€</span>
+                </div>
+            </div>
+
+            <div class="card gasolina-plus">
+                <h2>Gasolina 98</h2>
+                <div class="precio">
+                    <span id="p-gasolina-p">---</span> <span class="moneda">€</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hdplayer-link">
+            <p>Enlace de datos para DynamicArea (HDPlayer):</p>
+            <a href="datos.json" target="_blank" class="btn-json">Abrir archivo .JSON</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

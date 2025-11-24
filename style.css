@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.grid-precios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 10px solid #ccc;
+}
+
+/* Colores específicos para cada tipo */
+.diesel { border-left-color: #000; } /* Negro para Diesel */
+.diesel-plus { border-left-color: #ffd700; } /* Dorado para Diesel Plus */
+.gasolina { border-left-color: #2ecc71; } /* Verde para 95 */
+.gasolina-plus { border-left-color: #27ae60; } /* Verde oscuro para 98 */
+
+h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.precio {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.moneda {
+    font-size: 1.5rem;
+    vertical-align: super;
+}
+
+/* Estilo del enlace HDPlayer */
+.hdplayer-link {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #e8e8e8;
+    border-radius: 8px;
+}
+
+.btn-json {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-json:hover {
+    background-color: #2980b9;
+}
