@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Precios</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos extra solo para el admin */
+        .admin-box { max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1.2rem; }
+        .btn-save { background-color: #e74c3c; color: white; border: none; padding: 15px; width: 100%; font-size: 1.2rem; cursor: pointer; border-radius: 5px; margin-top: 20px; }
+        .btn-save:hover { background-color: #c0392b; }
+        .token-area { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; }
+        .token-input { font-size: 0.8rem; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Panel de Control</h1>
+            <p>Modificar precios del archivo JSON</p>
+        </header>
+
+        <div class="admin-box">
+            <div class="form-group">
+                <label>Gasoil Normal</label>
+                <input type="number" id="input-gasoil-n" step="0.001">
+            </div>
+            <div class="form-group">
+                <label>Gasoil Premium</label>
+                <input type="number" id="input-gasoil-p" step="0.001">
+            </div>
+            <div class="form-group">
+                <label>Gasolina 95</label>
+                <input type="number" id="input-gasolina-n" step="0.001">
+            </div>
+            <div class="form-group">
+                <label>Gasolina 98</label>
+                <input type="number" id="input-gasolina-p" step="0.001">
+            </div>
+
+            <div class="token-area">
+                <label>GitHub Token (Contraseña)</label>
+                <input type="password" id="github-token" class="token-input" placeholder="Pega aquí tu token ghp_...">
+                <small>Necesario para guardar los cambios en la nube.</small>
+            </div>
+
+            <button class="btn-save" onclick="guardarCambios()">GUARDAR CAMBIOS</button>
+            <p id="status-msg" style="margin-top:10px; font-weight:bold;"></p>
+            <br>
+            <a href="index.html">Volver a la pantalla de precios</a>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
